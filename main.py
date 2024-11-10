@@ -14,7 +14,7 @@ except:
 
 parser = ArgumentParser(description="Backup all GitHub repositories")
 parser.add_argument("-o", "--output-directory", type=str, default="output")
-parser.add_argument("-h", "--use-http", action="store_true", help="Use HTTP cloning instead of ssh cloning")
+parser.add_argument("--use-http", action="store_true", help="Use HTTP cloning instead of ssh cloning")
 
 GITHUB_ACCESS_TOKEN = environ["GITHUB_ACCESS_TOKEN"]
 
